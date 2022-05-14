@@ -1,0 +1,8 @@
+net.probe on
+set arp.spoof.fullduplex true
+set arp.spoof.targets 172.16.42.1, 172.16.42.119
+#arp.spoof on
+net.probe on
+set arp.spoof.fullduplex true
+set arp.spoof.targets 172.16.42.1, 172.16.42.119
+#arp.spoof on
