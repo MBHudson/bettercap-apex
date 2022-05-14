@@ -1,0 +1,4 @@
+#!/bin/bash
+cd
+cd bettercap
+sudo ./bettercap -iface wlo1 -caplet /usr/local/share/bettercap/caplets/web-override/web-override.cap

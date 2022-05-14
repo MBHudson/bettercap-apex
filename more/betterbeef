@@ -1,0 +1,3 @@
+cd
+cd bettercap
+sudo bettercap -iface wlo1 -caplet stage1

@@ -1,0 +1,5 @@
+clear
+echo "#Listen3000 v0.1 :: By MBHudson 2022//"
+sudo lsof -i:3000
+sleep 3
+./listen3000
